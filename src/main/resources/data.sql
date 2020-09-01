@@ -1,0 +1,1 @@
+insert into Alian values(101,'Manikanta');
