@@ -27,7 +27,7 @@ public class AlianController {
 	public ModelAndView addAlian(@RequestParam int aid) {
 		ModelAndView mv=new ModelAndView("showAlian.jsp");
 		Alian alian=repo.findById(aid).orElse(new Alian());
-//		System.out.println(repo.findById(aid));
+		System.out.println(repo.findById(aid));
 //		System.out.println(repo.findByAname("pruthvi"));
 		System.out.println(repo.findByAidGreaterThan(102));
 		mv.addObject(alian);
